@@ -15,7 +15,7 @@ const validarToken = require('../controllers/Admin/auth');
 
 const router = Router();
 // para cuan se inicia el servidor 
-router.get("", (req, res) => res.status(200).send("hi welcome a la aplicacion de cuentas"));
+router.get("/", (req, res) => res.status(200).send("hi welcome a la aplicacion de cuentas"));
 // Configurar los routers
 // ruta GET /cuentas
 router.get("/cuentas", getCuentas);
